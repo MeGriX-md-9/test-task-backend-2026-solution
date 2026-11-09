@@ -32,4 +32,4 @@ export TEST_DATABASE_URL='postgresql+psycopg://user:password@localhost/testdb'
 python -m unittest discover -s tests -v
 ```
 
-В PowerShell переменная задаётся через `$env:TEST_DATABASE_URL = '…'`. Тесты создают отдельную временную схему. Для вызова из приложения передайте `fetch=crm_fetch` в активном контексте Flask. Адаптер должен отдавать итераторы `Customer` и `Lead` и выбрасывать исключение при ошибке получения страницы. Боевой клиент CRM в задание не входил.
+В PowerShell переменная задаётся через `$env:TEST_DATABASE_URL = '…'`. Тесты создают отдельную временную схему. Для вызова из приложения передайте `fetch=crm_fetch` в активном контексте Flask. Адаптер должен отдавать итераторы `Customer` и `Lead` и выбрасывать исключение при ошибке получения страницы.
